@@ -1,1 +1,4 @@
-theme: jekyll-theme-dinky
+base-url:/support
+name: Christmas Recipes
+markdown: redcarpet
+pygments: true
