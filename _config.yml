@@ -2,3 +2,5 @@ baseurl: /support
 name: Support
 markdown: redcarpet
 pygments: true
+collections:
+- faq
