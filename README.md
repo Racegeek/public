@@ -1,10 +1,6 @@
 ---
 layout: default
 ---
-{% for p in site.pages %}
-yo yo
-
-{% endfor %}
 
 ## Welcome to GitHub Pages
 
