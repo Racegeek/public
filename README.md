@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+{% for p in site.faq %}
+yo yo
+
+{% endfor %}
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Racegeek/public/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
