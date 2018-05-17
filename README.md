@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% for p in site.pages %}
+{% for p in site.collections%}
 yoyo
 {% endfor %}
 
