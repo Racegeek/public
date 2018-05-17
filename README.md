@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% for p in site.faq %}
+{% for p in site.pages %}
 yoyo
 {% endfor %}
 ## Welcome to GitHub Pages
