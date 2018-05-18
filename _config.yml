@@ -1,7 +1,5 @@
-baseurl: /support
-name: Support
-markdown: redcarpet
-pygments: true
+name: support
 collections:
-- faq:
+  faq:
     output: ture
+    permalink: /faq/:path/
