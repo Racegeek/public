@@ -5,9 +5,8 @@ title: support
 {% assign h = "" %}
 {% for p in site.faq %}
 
-<h3>{{ p.path }}</h3>
-
 {% assign cat = p.path | split: "/" %}
+
 {% if cat[1] contains '.md' %}
 * {{ p.title }}
 {% else %}
@@ -16,7 +15,7 @@ title: support
 * {{ cat[1] }}
 {% endif %}
 
-  - {{ p.title }}
+ * {{ p.title }}
 
 {% endif %}
 
