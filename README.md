@@ -14,8 +14,7 @@ title: support
 {% if cat[1] != h %}
 * {{ cat[1] }}
 {% endif %}
-
- * {{ p.title }}
+  - {{ p.title }}
 
 {% endif %}
 
