@@ -1,0 +1,21 @@
+---
+layout: page
+title: support
+---
+{% assign h = "" %}
+<ul>
+<ul><li>FAQ
+{% for p in site.faq %}
+{% assign cat = p.path | split: "/" %}
+{% if cat[1] contains '.md' %}
+</li></ul><li>{{ p.title }}
+{% else %}
+{% if cat[1] != h %}
+</li></ul><li>{{ cat[1] }}
+<ul>
+{% endif %}
+</li></li>{{ p.title }}
+{% endif %}
+
+{% endfor %}
+</ul></ul>
