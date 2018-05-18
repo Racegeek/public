@@ -9,7 +9,7 @@ title: support
 {% for p in site.faq %}
 {% assign cat = p.path | split: '/' %}
 {% if cat[1] contains '.md' %}
-{% if h != '' %}</ul></li>{% endif %}
+{% if h != '' %}</ul></li>{% assign h = '' %}{% endif %}
 <li>{{ p.title }}</li>
 {% else %}
 {% if cat[1] != h %}
