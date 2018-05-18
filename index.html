@@ -2,24 +2,22 @@
 layout: page
 title: support
 ---
-{% assign h = "" %}
+{% assign h = '' %}
 <ul>
 <li>FAQ
 <ul>
 {% for p in site.faq %}
-{% assign cat = p.path | split: "/" %}
+{% assign cat = p.path | split: '/' %}
 {% if cat[1] contains '.md' %}
   <li>{{ p.title }}</li>
 {% else %}
 {% if cat[1] != h %}
-  {% if h != "" %}</ul></li>{% endif %}
+  {% if h != '' %}</ul></li>{% endif %}
 <li>{{ cat[1] }}
-<ul>
-  {% assign h = cat[1] %}
+<ul>{% assign h = cat[1] %}
 {% endif %}
-  <li>{{ p.title }}</li>
+<li>{{ p.title }}</li>
 {% endif %}
-
 {% endfor %}
 </ul></li>
 </ul>
