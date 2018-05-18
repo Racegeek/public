@@ -4,18 +4,23 @@ title: support
 ---
 {% assign h = "" %}
 <ul>
-<ul><li>FAQ
+<li>FAQ
+<ul>
 {% for p in site.faq %}
 {% assign cat = p.path | split: "/" %}
 {% if cat[1] contains '.md' %}
-</li></ul><li>{{ p.title }}
+  <li>{{ p.title }}</li>
 {% else %}
 {% if cat[1] != h %}
-</li></ul><li>{{ cat[1] }}
+  {% if h != "" %}</ul></li>{% endif %}
+<li>{{ cat[1] }}
 <ul>
+  {% assign h = cat[1] %}
 {% endif %}
-</li></li>{{ p.title }}
+  </li>{{ p.title }}</li>
 {% endif %}
 
 {% endfor %}
-</ul></ul>
+</ul></li>
+</ul>
+</ul>
