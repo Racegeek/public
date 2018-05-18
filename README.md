@@ -10,7 +10,7 @@ title: support
 * {{ p.title }}
 {% else %}
 {% if cat[1] != h %}
-  - {{ cat[1] }}
+* {{ cat[1] }}
 {% else %}
   - {{ p.title }}
 {% endif %}
