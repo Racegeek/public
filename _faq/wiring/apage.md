@@ -1,4 +1,0 @@
----
-title: wiring - apage
----
-lalalalaaa
